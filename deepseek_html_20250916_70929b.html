@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сила и грация: гимнастика и хоккей России</title>
+    <style>
+        :root {
+            --primary-color: #1a5276;
+            --secondary-color: #e74c3c;
+            --accent-color: #f39c12;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            margin: 40px 0 20px;
+            color: var(--primary-color);
+            text-align: center;
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            margin: 30px 0 15px;
+            color: var(--secondary-color);
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .intro {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: white;
+        }
+        
+        .sports-section {
+            padding: 50px 0;
+        }
+        
+        .sport-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sport-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .sport-content {
+            padding: 30px;
+        }
+        
+        .benefits {
+            background-color: var(--light-color);
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .benefit-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                        url('https://images.unsplash.com/photo-1518604666860-9ed391f76460?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Сила и грация: гимнастика и хоккей России</h1>
+            <p>Присоединяйся к великим спортивным традициям нашей страны!</p>
+            <a href="#cta" class="btn">Начать заниматься</a>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <h2>Великое спортивное наследие</h2>
+            <p>Россия имеет богатейшие традиции в спортивной гимнастике и хоккее. Наши спортсмены неоднократно доказывали своё мастерство на международной арене, завоевывая золотые медали и устанавливая рекорды. Пришло время продолжить эти славные традиции!</p>
+        </div>
+    </section>
+
+    <section class="sports-section">
+        <div class="container">
+            <h2>Знакомство с видами спорта</h2>
+            
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1547996160-81dfa63595ed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Спортивная гимнастика" class="sport-image">
+                <div class="sport-content">
+                    <h3>Спортивная гимнастика</h3>
+                    <p>Спортивная гимнастика — это искусство контроля над своим телом, сочетающее силу, гибкость и грацию. Российская школа гимнастики признана одной из сильнейших в мире, воспитавшая таких легенд, как Лариса Латынина, Николай Андрианов и Алексей Немов.</p>
+                    <p>Начните заниматься гимнастикой, чтобы развить:</p>
+                    <ul>
+                        <li>Координацию движений и чувство баланса</li>
+                        <li>Силу и гибкость всего тела</li>
+                        <li>Дисциплину и уверенность в себе</li>
+                        <li>Артистизм и выразительность</li>
+                    </ul>
+                    <a href="#cta" class="btn">Начать заниматься гимнастикой</a>
+                </div>
+            </div>
+            
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1547407139-3c921a66005c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Хоккей с шайбой" class="sport-image">
+                <div class="sport-content">
+                    <h3>Хоккей с шайбой</h3>
+                    <p>Хоккей — это не просто игра, это скорость, тактика и командный дух! Советская и российская хоккейные школы подарили миру таких великих игроков, как Валерий Харламов, Владислав Третьяк и Александр Овечкин.</p>
+                    <p>Начните играть в хоккей, чтобы развить:</p>
+                    <ul>
+                        <li>Выносливость и скорость</li>
+                        <li>Тактическое мышление</li>
+                        <li>Командный дух и взаимовыручку</li>
+                        <li>Силу воли и характер</li>
+                    </ul>
+                    <a href="#cta" class="btn">Начать играть в хоккей</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2>Почему стоит начать заниматься?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Физическое здоровье</h3>
+                    <p>Регулярные тренировки укрепляют сердечно-сосудистую систему, развивают мышцы и улучшают общее состояние организма.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Психическое здоровье</h3>
+                    <p>Спорт помогает снять стресс, повышает уверенность в себе и учит дисциплине.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Социальные связи</h3>
+                    <p>Командные виды спорта, особенно хоккей, помогают найти новых друзей и научиться работать в коллективе.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Карьерные перспективы</h3>
+                    <p>Для талантливых спортсменов открываются возможности профессиональной карьеры и участия в международных соревнованиях.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Начни свой спортивный путь сегодня!</h2>
+                <p>Неважно, сколько тебе лет и какой у тебя уровень подготовки — начать заниматься спортом никогда не поздно. Присоединяйся к тысячам людей, которые уже открыли для себя мир спортивной гимнастики и хоккея!</p>
+                <p>Заполни форму ниже, и мы поможем тебе найти подходящую секцию в твоём городе:</p>
+                <form style="margin-top: 30px;">
+                    <input type="text" placeholder="Ваше имя" style="padding: 12px; width: 80%; max-width: 400px; margin: 10px; border-radius: 5px; border: none;">
+                    <input type="email" placeholder="Ваш email" style="padding: 12px; width: 80%; max-width: 400px; margin: 10px; border-radius: 5px; border: none;">
+                    <select style="padding: 12px; width: 80%; max-width: 400px; margin: 10px; border-radius: 5px; border: none;">
+                        <option>Выберите вид спорта</option>
+                        <option>Спортивная гимнастика</option>
+                        <option>Хоккей с шайбой</option>
+                    </select>
+                    <button type="submit" style="background-color: var(--accent-color); color: white; padding: 12px 30px; border: none; border-radius: 30px; font-weight: bold; margin-top: 20px; cursor: pointer;">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Сила и грация: гимнастика и хоккей России</p>
+            <p>Присоединяйся к великим спортивным традициям!</p>
+        </div>
+    </footer>
+</body>
+</html>
